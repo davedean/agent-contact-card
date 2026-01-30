@@ -2,6 +2,7 @@
 version: "1"
 name: "David's Agents"
 human_contact: "+61 4xx xxx xxx"
+last_updated: "2026-01-30"
 channels:
   discord: "davids-agent#1234"
   email: "agent@david.example"
