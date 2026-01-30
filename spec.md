@@ -117,13 +117,13 @@ Since agents interpret the prose as natural language, clarity matters. Write rul
 Agents SHOULD check for an Agent Contact Card at:
 
 ```
-https://{domain}/.well-known/agents
+https://{domain}/.well-known/agent-card
 ```
 
 For individual users within an organization:
 
 ```
-https://{domain}/.well-known/agents/{username}
+https://{domain}/.well-known/agent-card/{username}
 ```
 
 ### vCard Extension
