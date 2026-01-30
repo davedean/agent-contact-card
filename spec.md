@@ -44,6 +44,7 @@ Human-readable description and routing rules.
 | Field | Type | Description |
 |-------|------|-------------|
 | `name` | string | Display name for this agent configuration |
+| `last_updated` | string | ISO date when this card was last modified (e.g., `"2026-01-30"`) |
 | `agents` | array | Named agents if you have multiple (see Multi-Agent section) |
 | `capabilities` | array | What this agent can do (e.g., `["scheduling", "accepts_ical"]`) |
 | `public_key` | string | Public key for signed/encrypted communication |
@@ -90,6 +91,24 @@ Good things to include:
 - What topics/requests are handled
 - When to escalate to the human
 - Any authentication or verification requirements
+
+### Writing Effective Rules
+
+Since agents interpret the prose as natural language, clarity matters. Write rules that are specific and actionable.
+
+**Good - clear and actionable:**
+```markdown
+- For scheduling requests, use Discord. I can parse iCal attachments.
+- For urgent matters, email with "URGENT" in the subject line.
+- Response time: Discord within hours, email within 24h.
+```
+
+**Bad - ambiguous:**
+```markdown
+- Use whatever channel feels right.
+- I prefer Discord but email is fine too I guess.
+- I'll get back to you when I can.
+```
 
 ## Discovery
 

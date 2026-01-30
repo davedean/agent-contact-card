@@ -59,9 +59,9 @@ See [spec.md](spec.md) for the full specification.
 
 ## Examples
 
-- [Personal agent](personal.md) - Individual with a few contact channels
-- [Organization](organization.md) - Company with multiple specialized agents
-- [Minimal](minimal.md) - Simplest possible valid file
+- [Personal agent](examples/personal.md) - Individual with a few contact channels
+- [Organization](examples/organization.md) - Company with multiple specialized agents
+- [Minimal](examples/minimal.md) - Simplest possible valid file
 
 ## Why Markdown?
 
